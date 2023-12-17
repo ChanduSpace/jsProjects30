@@ -1,11 +1,12 @@
-let urlData = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
-const apiKey = "2918d2bb3af32e91e128131a83c301e7";
-
 async function updateWeather(here) {
-  let url = await fetch(urlData + here + `&appid=${apiKey}`);
+  let url = await fetch(
+    "https://api.openweathermap.org/data/2.5/weather?units=metric&q=" +
+      here +
+      "&appid=2918d2bb3af32e91e128131a83c301e7"
+  );
   let data = await url.json();
-
   if (data.cod === "404") {
+    document.querySelector(".weather").classList.add("tab");
     document.querySelector(".error-msg").classList.remove("tab");
   } else {
     document.querySelector(".error-msg").classList.add("tab");
@@ -17,10 +18,6 @@ async function updateWeather(here) {
     document.querySelector(".weather").classList.remove("tab");
   }
 }
-
-let inputBox = document.querySelector(".input-box");
-let searchButton = document.querySelector(".search-button");
-
-searchButton.addEventListener("click", () => {
-  updateWeather(inputBox.value);
+document.querySelector(".search-button").addEventListener("click", () => {
+  updateWeather(document.querySelector(".input-box").value);
 });
