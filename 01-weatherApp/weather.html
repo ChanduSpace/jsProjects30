@@ -13,7 +13,40 @@
     <title>Weather</title>
   </head>
   <body>
-    hello
+    <div class="main-container">
+      <div class="search">
+        <input
+          class="input-box"
+          value="Hyderabad"
+          type="text"
+          placeholder="enter city name"
+        />
+        <button class="search-button">
+          <img class="search-img" src="pics/search.svg" alt="" />
+        </button>
+      </div>
+      <div class="weather">
+        <p>Temperature</p>
+        <h1>88°C</h1>
+        <h2>Hyderabad</h2>
+        <div class="humidity-wind">
+          <div class="humidity">
+            <img src="pics/sunny2.png" alt="" />
+            <div class="humidity-info">
+              <p>88%</p>
+              <p>Humidity</p>
+            </div>
+          </div>
+          <div class="wind">
+            <img src="pics/windmill.png" alt="" />
+            <div class="wind-info">
+              <p>88 km/h</p>
+              <p>Wind</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="weather.js"></script>
   </body>
 </html>
