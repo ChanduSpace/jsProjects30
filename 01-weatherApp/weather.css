@@ -102,3 +102,12 @@ body {
 .wind-info {
   text-align: left;
 }
+
+.error-msg {
+  color: aliceblue;
+  margin-top: 16px;
+}
+
+.tab {
+  display: none;
+}
