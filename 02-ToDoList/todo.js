@@ -13,20 +13,17 @@ function addTask() {
 
     let cross = document.createElement("span");
     cross.innerHTML = "\u00d7";
+    // listElement.classList.add("task");
     listElement.appendChild(cross);
   }
 }
-
-let list = document.querySelectorAll(".task");
-
-list.forEach((element) => {
-  element.addEventListener("click", (e) => {
-    if (e.target.tagName === "li") {
-      e.target.classList.toggle("done");
-    } else if (e.target.tagName === "span") {
-      e.target.parentElement.remove();
-    }
-  });
+let list = document.querySelector(".list");
+list.addEventListener("click", (a) => {
+  if (a.target.tagName === "LI") {
+    a.target.classList.toggle("done");
+  } else if (a.target.tagName === "SPAN") {
+    a.target.parentElement.remove();
+  }
 });
 
 // // addTask();

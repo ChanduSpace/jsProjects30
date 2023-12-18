@@ -50,6 +50,7 @@ body {
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
   background-color: white;
+  outline: none;
 }
 .input-container button:hover {
   background-color: aliceblue;
@@ -73,7 +74,7 @@ ul li {
   width: 274px;
   text-align: left;
 }
-ul li .done {
+.done {
   list-style-type: disc;
   text-decoration: line-through;
 }
