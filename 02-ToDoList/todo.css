@@ -9,9 +9,9 @@ body {
   align-items: center;
   justify-content: center;
   background-color: rgb(42, 38, 38);
-  height: 100vh;
 }
 .container {
+  margin-top: 50px;
   padding: 20px;
   background-color: antiquewhite;
   max-width: 400px;
