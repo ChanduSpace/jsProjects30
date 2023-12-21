@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(42, 38, 38);
+}
+.container {
+  width: 90%;
+  max-width: 400px;
+  margin-top: 100px;
+  background-color: antiquewhite;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.q-qnd-a {
+  border-top: 1px solid black;
+  padding-top: 20px;
+}
+.btn {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  height: 40px;
+  padding-left: 16px;
+  border: 1px solid rgb(42, 38, 38);
+  background-color: antiquewhite;
+  text-align: left;
+  border-radius: 4px;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  cursor: pointer;
+}
+.btn:hover:not([disabled]) {
+  border: 1px solid antiquewhite;
+  background-color: black;
+  color: whitesmoke;
+}
+.btn:disabled {
+  cursor: no-drop;
+}
+.next-button {
+  /* display: block; */
+  margin-top: 10px;
+  width: 150px;
+  height: 40px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border: none;
+  background-color: rgb(40, 36, 36);
+  color: antiquewhite;
+  border-radius: 4px;
+}
+.none {
+  display: none;
+}
+.next-button:hover {
+  opacity: 0.95;
+}
+.right {
+  background-color: rgb(120, 155, 66);
+}
+.wrong {
+  background-color: rgb(166, 67, 67);
+}
